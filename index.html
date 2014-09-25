@@ -5,8 +5,10 @@
 	<script>
 		function onload(){
 			$('button').click(function(){
-				console.log("Input 1: " + $('#input1').val());
-				console.log("Input 2: " + $('#input2').val());
+				var value1 = $('#input1').val(); // Store the first input's value in a variable for future use.
+				var value2 = $('#input2').val(); // Same with the second input.
+				$('#value1').text(value1); // Set the first span's text with the first value.
+				$('#value2').text(value2); // Do the same with the second value
 			});
 		}
 	</script>
@@ -14,6 +16,8 @@
 <body onload="onload()">
 	<input id="input1"></input><br>
 	<input id="input2"></input><br>
-	<button>Show values in console</button>
+	<button>Show values in console</button><br>
+	<span id="value1"></span> <!-- This is the first span --> <br>
+	<span id="value2"></span> <!-- This is the second span -->
 </body>
 </html>
