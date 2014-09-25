@@ -5,12 +5,15 @@
 	<script>
 		function onload(){
 			$('button').click(function(){
-				console.log($('#input1').val());
+				console.log("Input 1: " + $('#input1').val());
+				console.log("Input 2: " + $('#input2').val());
 			});
 		}
 	</script>
 </head>
-<body>
-	<input id="input1"></input><button>Show value in console</button>
+<body onload="onload()">
+	<input id="input1"></input><br>
+	<input id="input2"></input><br>
+	<button>Show values in console</button>
 </body>
 </html>
